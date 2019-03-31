@@ -10,7 +10,7 @@ export const sessionMap = new Map<string, YakbakHandler>();
 function getActiveTapeHandler() {
   const { tape: key } = config;
   if (!sessionMap.has(key)) {
-    const handler = yakbak('https://jsonplaceholder.typicode.com', { dirname: config.getPath() });
+    const handler = yakbak(config.upstream, { dirname: config.getPath() });
     sessionMap.set(key, handler);
   }
   return sessionMap.get(key);

@@ -8,6 +8,7 @@ import { AppModule } from './app.module';
 
 const yakbak = createYakbakApp({
   tape: 'default',
+  upstream: 'https://jsonplaceholder.typicode.com',
   baseDir: path.resolve('tapes'),
 });
 

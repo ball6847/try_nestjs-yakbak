@@ -1,6 +1,7 @@
 import * as path from 'path';
 
 export class YakbakConfig {
+  upstream: string;
   private path: string;
 
   // tslint:disable-next-line: variable-name
