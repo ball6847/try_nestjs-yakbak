@@ -375,9 +375,10 @@ Temporary Items
 
 =======
 # Local
-docker-compose.yml
 .env
 dist
+
+docker-compose.override.yml
 
 /tapes/*
 !/tapes/.gitkeep

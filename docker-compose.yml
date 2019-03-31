@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  yakbak-server:
+    image: ball6847/yakbak-server:latest
+    ports:
+      - 3000:3000
+      - 3001:3001
+    volumes:
+      - ./tapes:/src/packages/yakbak-nestjs-app/tapes
+    environment:
+      UPSTREAM: https://jsonplaceholder.typicode.com
