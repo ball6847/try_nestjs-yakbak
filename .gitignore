@@ -391,5 +391,5 @@ docker-compose.yml
 .env
 dist
 
-src/yakbak/tape/*
-!src/yakbak/tape/.gitkeep
+/tapes/*
+!/tapes/.gitkeep
